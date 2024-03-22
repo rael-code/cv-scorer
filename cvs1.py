@@ -82,18 +82,18 @@ cv_text_label.pack()
 cv_text_box = Text(root, wrap=tk.WORD, width=40, height=10)
 cv_text_box.pack()
 
-# "Calculate Score" Button
+# "Calculate Score" button
 calculate_button = tk.Button(root, text="Calculate CV Score", command=calculate_score)
 calculate_button.pack()
 
-# CV score Display Label
+# CV score display label
 result_label = tk.Label(root, text="", font=("Helvetica", 14))
 result_label.pack()
 
 clear_button = tk.Button(root, text="Clear", command=clear_fields)
 clear_button.pack()
 
-# Scrollable text area
+# scrollable text area
 summary_text = Text(root, wrap=tk.WORD, width=40, height=10)
 summary_text.pack()
 scrollbar = Scrollbar(root, command=summary_text.yview)
