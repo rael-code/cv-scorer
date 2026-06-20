@@ -70,19 +70,19 @@ skills_list = [
 root = tk.Tk()
 root.title("CV Scorer")
 
-# "Job description" text box
+# 'Job desc' text box
 job_description_label = tk.Label(root, text="Job Description:")
 job_description_label.pack()
 job_description_text = Text(root, wrap=tk.WORD, width=40, height=10)
 job_description_text.pack()
 
-#"CV text" box
+# 'CV text' box
 cv_text_label = tk.Label(root, text="CV Text:")
 cv_text_label.pack()
 cv_text_box = Text(root, wrap=tk.WORD, width=40, height=10)
 cv_text_box.pack()
 
-# "Calculate Score" button
+# 'Calculate Score' button
 calculate_button = tk.Button(root, text="Calculate CV Score", command=calculate_score)
 calculate_button.pack()
 
